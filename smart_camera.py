@@ -1,17 +1,24 @@
 import cv2
 import sys
 
-# Load the cascade
+# Create an object of the class CascadeClassifier
+# with the Haar Cascade XML file that has been trained
+# to detect the front of faces.
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-# To capture video from webcam.
+# Initialize video capture with the default webcam.
+# '0' refers to the first camera connected to the computer.
 cap = cv2.VideoCapture(0)
 
 while True:
-    # Read the frame
+    # Read each frame from the camera.
+    # read() returns a bool value if the read is successful
+    # and the frame it captured.
+    # The bool value is saved to "_" and the frame is
+    # saved to "img."
     _, img = cap.read()
     
-    # Convert to grayscale
+    # Convert to grayscale.
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     
     # Detect the faces
