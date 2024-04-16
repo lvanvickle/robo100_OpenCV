@@ -16,11 +16,10 @@ sudo apt install -y libgtk2.0-dev libgtk-3-dev
 sudo apt install -y libatlas-base-dev gfortran
 sudo apt install -y libhdf5-dev libhdf5-103
 sudo apt install -y libqtgui4 libqtwebkit4 libqt4-test python3-pyqt5
-sudo apt install -y python3-dev python3-pip
 
 # Install OpenCV Python library
 echo "Installing OpenCV library..."
-pip3 install opencv-python-headless numpy
+pip install opencv-python-headless numpy
 
 # Download Haar Cascade Frontal Face XML file
 echo "Downloading Haar Cascade Frontal Face XML file..."
