@@ -23,6 +23,6 @@ pip install opencv-python-headless numpy
 
 # Download Haar Cascade Frontal Face XML file
 echo "Downloading Haar Cascade Frontal Face XML file..."
-wget -O ~/haarcascade_frontalface_default.xml https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml
+wget -O ./haarcascade_frontalface_default.xml https://github.com/kipr/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
 
 echo "Setup complete. You can now use OpenCV with Haar Cascade for face detection."
